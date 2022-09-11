@@ -79,17 +79,4 @@ function game(){
 
 game()*/
 
-function countChar(string, ch) {
-    let counted = 0;
-   for (let i = 0; i < string.length; i++) {
-    if (string[i] == ch) {
-        counted++;
-    }
-  }
-  return counted; 
-}
 
-function countBs(string){
-    return countChar(string, 'B');
-}
-console.log(countChar('hhmmiimmmmmmmmmmmmmmmmmmmmmmmmmm', 'm'));
