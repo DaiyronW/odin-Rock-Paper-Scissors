@@ -1,4 +1,4 @@
-const options = ["rock", "paper", "scissors"]
+/*const options = ["rock", "paper", "scissors"]
 
 function getComputerChoice(){
     const choice = options[Math.floor(Math.random() * options.length)];
@@ -77,4 +77,19 @@ function game(){
 }
 
 
-game()
+game()*/
+
+function countChar(string, ch) {
+    let counted = 0;
+   for (let i = 0; i < string.length; i++) {
+    if (string[i] == ch) {
+        counted++;
+    }
+  }
+  return counted; 
+}
+
+function countBs(string){
+    return countChar(string, 'B');
+}
+console.log(countChar('hhmmiimmmmmmmmmmmmmmmmmmmmmmmmmm', 'm'));
